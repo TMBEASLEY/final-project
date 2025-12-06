@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Beasley Consulting | Web & IT Services</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
+</head>
+
+<body>
+   <a href="#main" class="skip-link">Skip to main content</a>
+
+   <!-- site header + nav -->
+   <header>
+      <div class="container">
+         <h1 class="logo">Beasley Consulting</h1>
+         <nav>
+            <ul>
+               <li><a href="#about">About</a></li>
+               <li><a href="#services">Services</a></li>
+               <li><a href="#products">Showcase</a></li>
+               <li><a href="#contact">Contact</a></li>
+               <li>
+                  <button id="themeToggle" aria-label="Toggle light/dark mode">
+                     Toggle Theme
+                  </button>
+               </li>
+            </ul>
+         </nav>
+      </div>
+   </header>
+
+   <main class="container" id="main">
+
+      <!-- hero section -->
+      <section id="hero">
+         <h2>Your Friendly Neighborhood Digital Handyman</h2>
+         <p class="lead">
+            Beasley Consulting helps small businesses solve real problems with custom websites,
+            modern branding, and reliable tech support. Think of me as your friendly neighborhood
+            digital handyman, but with less duct tape and more actual expertise.
+         </p>
+      </section>
+
+      <!-- about section -->
+      <section id="about">
+         <h2>About Beasley Consulting</h2>
+
+         <div class="about-text">
+            <p>
+               Beasley Consulting is run by Tate Beasley, a Portland based designer, developer,
+               and IT problem-solver who works with small businesses that don’t have time for confusing
+               tech jargon or agency-level invoices.
+            </p>
+            <p>
+               I build websites, refine branding, solve day-to-day tech issues, and help local shops run smoothly.
+               My goal is simple: create systems that feel clean, functional and intuitive.
+            </p>
+            <p>
+               Whether you’re opening a café, running a contracting business, or keeping a family shop alive,
+               I help you build systems that work like they should.
+            </p>
+         </div>
+
+         <div class="about-photo"><img src="img/Headshot.jpg" alt="Photo of Tate Beasley in a brightly lit cafe setting"></div>
+      </section>
+
+      <!-- main services -->
+      <section id="services">
+         <h2>Services</h2>
+
+         <div class="service-list">
+            <div class="service-item">
+               <h3>Custom Websites</h3>
+               <p>
+                  Modern, fast, and built for your goals. No templates or clutter, just clean
+                  design that works on every device.
+               </p>
+            </div>
+
+            <div class="service-item">
+               <h3>Brand &amp; Visual Design</h3>
+               <p>
+                  Logos, color palettes, and visual systems that help your business look memorable
+                  and professional while still feeling like you.
+               </p>
+            </div>
+
+            <div class="service-item">
+               <h3>IT Troubleshooting &amp; Setup</h3>
+               <p>
+                  Network configuration, hardware setup, software installation, and practical tech support
+                  for small teams who don’t have in-house IT.
+               </p>
+            </div>
+
+            <div class="service-item">
+               <h3>Small Business Tech Consulting</h3>
+               <p>
+                  Need help choosing tools, automating tasks, or setting up workflows that don't depend
+                  on sticky notes and vibes? I'll help you build a setup that runs smoother.
+               </p>
+            </div>
+         </div>
+      </section>
+
+      <!-- product showcase -->
+      <section id="products">
+         <h2>Showcase</h2>
+
+         <p class="lead">A closer look at some of the things I help small businesses build.</p>
+
+         <div id="product-controls">
+            <button data-product="1">Website Design</button>
+            <button data-product="2">Logo &amp; Branding</button>
+            <button data-product="3">IT Setup</button>
+         </div>
+
+         <div id="product-display">
+            <img id="product-image" src="img/webdesign.jpg" alt="Service example image">
+            <div>
+               <h3 id="product-title">Website design</h3>
+               <p id="product-description">Custom fast sites for small businesses.</p>
+            </div>
+         </div>
+      </section>
+
+      <!-- little guessing game -->
+      <section id="game">
+         <h2>Guessing Game</h2>
+         <p>Enter a number and see if you can beat the computer.</p>
+
+         <label for="guessInput">Enter a number (1–10):</label>
+         <input type="number" id="guessInput" min="1" max="10">
+         <button id="guessBtn">Guess</button>
+
+         <p id="guessResult"></p>
+      </section>
+
+      <!-- contact form -->
+      <section id="contact">
+         <h2>Contact</h2>
+
+         <p>
+            Ready to start a project, fix a tech headache, or ask a few questions?
+            Send a message below. I reply within one business day unless the sun comes out,
+            in which case it might take slightly longer.
+         </p>
+
+         <form id="contactForm" novalidate>
+
+            <div>
+               <label for="fullName">Full Name *</label>
+               <input type="text" id="fullName" name="fullName">
+               <span class="errorMsg"></span>
+            </div>
+
+            <div>
+               <label for="phone">Phone Number</label>
+               <input type="text" id="phone" name="phone">
+               <span class="errorMsg"></span>
+            </div>
+
+            <div>
+               <label for="email">Email Address</label>
+               <input type="text" id="email" name="email">
+               <span class="errorMsg"></span>
+            </div>
+
+            <div>
+               <label>Preferred Contact Method *</label>
+               <label><input type="radio" name="pref" value="phone"> Phone</label>
+               <label><input type="radio" name="pref" value="email"> Email</label>
+               <span class="errorMsg"></span>
+            </div>
+
+            <div>
+               <label for="comments">Comments *</label>
+               <textarea id="comments"></textarea>
+               <span class="errorMsg"></span>
+            </div>
+
+            <button type="submit">Submit</button>
+         </form>
+
+         <div id="thankYouMessage" class="hide"></div>
+      </section>
+   </main>
+
+   <!-- footer info -->
+   <footer>
+      <p>&copy; 2025 Beasley Consulting • Portland, OR</p>
+   </footer>
+
+</body>
+</html>
