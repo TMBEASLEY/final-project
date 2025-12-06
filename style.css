@@ -138,7 +138,7 @@ nav a:hover {
    background: rgba(0, 0, 0, 0.25);
 }
 
-/* general layout + type */
+/* general layout */
 
 main {
    padding-bottom: 56px;
@@ -178,7 +178,7 @@ p {
    margin: 0 0 12px;
 }
 
-/* hero block */
+/* hero section */
 
 #hero {
    background: linear-gradient(
@@ -206,13 +206,13 @@ p {
 
 #about {
    display: grid;
-   grid-template-columns: 1.2fr 1fr; /* text bigger than image */
+   grid-template-columns: 1.2fr 1fr; 
    gap: 32px;
    align-items: start;
 }
 
 #about h2 {
-   grid-column: 1 / -1; /* make the heading span both columns */
+   grid-column: 1 / -1; 
 }
 
 .about-text p {
